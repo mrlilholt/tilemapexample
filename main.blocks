@@ -1,0 +1,40 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="^sf@,wg{axGljjIn60-C">mySprite</variable><variable type="KIND_SpriteKind" id="!MspVXp,XS,OjE[^Lx6a">Player</variable><variable type="KIND_SpriteKind" id="E6h^A$o;Bh{Z%JTu%_Ag">Projectile</variable><variable type="KIND_SpriteKind" id="XfjMZ?50{lGx?8L.4~Fv">Food</variable><variable type="KIND_SpriteKind" id="lre*(RXTODkMyj2tr(!n">Enemy</variable><variable type="BLOCKLY_TILESET_TYPE" id="88|L!g7LyuIEWJ6L5/gK">0;16;16;0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</variable><variable type="BLOCKLY_TILESET_TYPE" id="15Y((B2hSC75Q*1gx-8N">1;16;16;0000000000000000111111111111111171777777777777177177777777777717717777777777771771777777777777177177777777777717717777777777771771777777777777177177777777777717717777777777771771777777777777177177777777777717717777777777771771777777777777171111111111111111</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="tilemap_editor"><field name="tilemap">tiles.createTilemap(
+            hex`1000100001010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010102020202020202020301030101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101030303030103010301010101010101010101010103030303010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101`,
+            img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+2 2 2 2 2 2 2 2 . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`,
+            [myTiles.tile0,sprites.castle.tilePath5,sprites.castle.tilePath2,myTiles.tile1],
+            TileScale.Sixteen
+        )</field><next><block type="variables_set"><field name="VAR" id="^sf@,wg{axGljjIn60-C">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="^sf@,wg{axGljjIn60-C">mySprite</field></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="^sf@,wg{axGljjIn60-C">mySprite</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">8</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">7</field></shadow></value><next><block type="camerafollow"><value name="sprite"><block type="variables_get"><field name="VAR" id="^sf@,wg{axGljjIn60-C">mySprite</field></block></value></block></next></block></next></block></next></block></next></block></statement></block></xml>
